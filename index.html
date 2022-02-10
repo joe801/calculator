@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Calculator app</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="space">
+      <div class="head">
+        <div class="calc">calc</div>
+        <div class="rights">
+          <p id="theme">THEME</p>
+          <div class="toggle">
+            <p>
+              <span class="nums" id="one">1</span>
+              <span class="nums">2</span>
+              <span class="nums">3</span>
+            </p>
+              <div class="tw-toggle" id="toggle">
+                <input type="radio" name="toggle" value="false" id="btn1" checked="checked">
+                <label class="toggle toggle-yes"><i class="fas fa-circle"></i></label>
+                <input type="radio" name="toggle" value="-1" id="btn2">
+                <label class="toggle toggle-yes"><i class="fas fa-circle"></i></label>
+                <input type="radio" name="toggle" value="true" id="btn3">
+                <label class="toggle toggle-yes"><i class="fas fa-circle"></i></label>
+                <span id="toggle"></span>  
+              </div>
+          </div>
+          
+
+        </div>
+      </div>
+      <form name="calc">
+        <input type="text" class="display" id="display" name="txt" readonly="">
+          <div class="button">
+            <div class="row">
+              <div onclick="document.calc.txt.value +='7'" class="btn-back left">7</div>
+              <div onclick="document.calc.txt.value +='8'" class="btn-back">8</div>
+              <div onclick="document.calc.txt.value +='9'" class="btn-back">9</div>
+              <div onclick="document.calc.txt.value = document.calc.txt.value.slice(0, -1)" class="btn-back right" id="del">DEL</div>
+            </div>
+            <div class="row">
+              <div onclick="document.calc.txt.value +='4'" class="btn-back left">4</div>
+              <div onclick="document.calc.txt.value +='5'" class="btn-back">5</div>
+              <div onclick="document.calc.txt.value +='6'" class="btn-back">6</div>
+              <div onclick="document.calc.txt.value +='+'" class="btn-back right">+</div>
+            </div>
+            <div class="row">
+              <div onclick="document.calc.txt.value +='1'" class="btn-back left">1</div>
+              <div onclick="document.calc.txt.value +='2'" class="btn-back">2</div>
+              <div onclick="document.calc.txt.value +='3'" class="btn-back">3</div>
+              <div onclick="document.calc.txt.value +='-'" class="btn-back right" id="minus">-</div>
+            </div>
+            <div class="row">
+              <div onclick="document.calc.txt.value +='.'" class="btn-back left" id="dot">.</div>
+              <div onclick="document.calc.txt.value +='0'"class="btn-back">0</div>
+              <div onclick="document.calc.txt.value +='/'" class="btn-back" id="divide">/</div>
+              <div onclick="document.calc.txt.value +='*'" class="btn-back right" id="times">X</div>
+            </div>
+            <div class="row final">
+              <div onclick="document.calc.txt.value =''" class="btn-back" id="reset">RESET</div>
+              <div onclick="document.calc.txt.value = eval(document.calc.txt.value)" class="btn-back" id="equalTo">=</div>
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+
+  <span id="logo">@joe<span id="logo-col">crypt</span> </span>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,344 @@
+:root{
+	--main-background: hsl(222, 26%, 31%);
+	--screen-background: hsl(224, 36%, 15%);
+	--button-background: hsl(223, 31%, 20%);
+	--key-background: hsl(30, 25%, 89%);
+	--key-shadow: hsl(28, 16%, 65%);
+	--del-background: hsl(225, 21%, 49%);
+	--del-shadow: hsl(224, 28%, 35%);
+	--text-color: #fff;
+	--text-button: hsl(221, 14%, 31%);
+	--equal-background: hsl(6, 63%, 50%);
+	--equal-shadow: hsl(6, 70%, 34%); 
+}
+
+.theme2{
+	--main-background: hsl(0, 0%, 90%);
+	--screen-background: hsl(0, 0%, 93%);
+	--button-background: hsl(0, 5%, 81%);
+	--key-background: hsl(45, 7%, 89%);
+	--key-shadow: hsl(35, 11%, 61%);
+	--del-background: hsl(185, 42%, 37%);
+	--del-shadow: hsl(185, 58%, 25%);
+	--text-color: #000;
+	--text-button: hsl(60, 10%, 19%);
+	--equal-background: hsl(25, 98%, 40%);
+	--equal-shadow: hsl(25, 99%, 27%); 
+}
+
+.theme3{
+	--main-background: hsl(268, 75%, 9%);
+	--screen-background: hsl(268, 71%, 12%);
+	--button-background: hsl(268, 71%, 12%);
+	--key-background: hsl(268, 47%, 21%);
+	--key-shadow: hsl(290, 70%, 36%);
+	--del-background: hsl(281, 89%, 26%);
+	--del-shadow: hsl(285, 91%, 52%);
+	--text-color: hsl(52, 100%, 62%);
+	--text-button: hsl(52, 100%, 62%);
+	--equal-background: hsl(176, 100%, 44%);
+	--equal-shadow: hsl(177, 92%, 70%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	max-width: 1440px;
+	background-color: var(--main-background);
+	font-family: ;
+	font-weight: 700;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.space{
+	display: inline-block;
+}
+
+.head{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+	color: var(--text-color);
+}
+
+.calc{
+	font-weight: bolder;
+	font-size: 25px;
+	margin-top: 19px;
+}
+
+.rights{
+	display: flex;
+	margin-right: -15px;
+}
+
+#theme{
+	position: relative;
+	top: 45%;
+}
+
+.rights p{
+	font-size: 10px;
+	padding-top: 10px;
+	margin-right: 15px;
+}
+
+.rights span{
+	margin-right: 12px;
+}
+
+#one{
+	margin-left: 2px;
+}
+
+
+.tw-toggle {
+  /* background: #95A5A6; */
+  display: inline-block;
+  padding: 1px 4px;
+  border-radius: 20px;
+  position:relative;
+  color: orange;
+  background-color: var(--screen-background);
+  margin-top: 5px;
+}
+
+.tw-toggle span {
+  height: 11px;
+  width: 11px;
+  line-height: 11px;
+  border-radius: 50%;
+  background:#fff;
+  display:block;
+  position:absolute;
+  left: 15px;
+  top: 3px;
+  transition:all 0.3s ease-in-out;
+}
+
+#btn2, #btn3{
+	opacity: 0.1;
+}
+
+.tw-toggle input[value="false"]:checked ~ span{
+  background: var(--equal-background);
+  left:5px;
+  color:#fff;
+}
+
+.tw-toggle input[value="true"]:checked ~ span{
+  background: var(--equal-background);
+  left: 39px;
+}
+.tw-toggle input[value="-1"]:checked ~ span{
+  background: var(--equal-background);
+  left: 22px;
+}
+
+.tw-toggle input[value="false"]:checked + label,.tw-toggle input[value="true"]:checked + label{
+  color:#fff;
+}
+.tw-toggle input[value="-1"]:checked + label{
+  color:#fff;
+}
+
+.display{
+	background-color: var(--screen-background);
+	width: 385px;
+	height: 70px;
+	border-radius: 10px;
+	margin-top: 30px;
+	padding-top: 15px;
+	padding-right: 15px;
+	border: none;
+	color: var(--text-color);
+	text-align: right;
+	font-size: 40px;
+	font-weight: bolder;
+	position: relative;
+}
+
+.button{
+	width: 400px;
+	height: 330px;
+	background-color: var(--button-background);
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.row{
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn-back{
+	padding: 2px 30px;
+	background-color: var(--key-background);
+	box-shadow: 0 3px var(--key-shadow);
+	color: var(--text-button);
+	margin-top: 20px;
+	border-radius: 5px;
+	text-align: center;
+	align-items: center;
+	font-size: 32px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.left{
+	margin-left: 10px;
+}
+
+.right{
+	margin-right: 10px;
+}
+
+#dot{
+	padding-right: 35px;
+}
+
+#del{
+	background-color: var(--del-background);
+	box-shadow: 0 3px var(--del-shadow);
+	color: white;
+	padding: 10px 15px;
+	font-size: 20px;
+}
+
+#minus{
+	padding-left: 35px;
+}
+
+#divide{
+	padding-right: 35px;
+}
+
+#times{
+	font-size: 20px;
+}
+
+.final{
+	justify-content: space-between;
+	margin: 0 19px;
+}
+
+#equalTo{
+	background-color: var(--equal-background);
+	box-shadow: 0 3px var(--equal-shadow);
+	padding: 8px 80px;
+	color: white;
+	font-size: 20px;
+}
+
+#reset{
+	background-color: var(--del-background);
+	color: white;
+	padding: 8px 50px;
+	box-shadow: 0 3px var(--del-shadow);
+	font-size: 20px;
+}
+
+#logo{
+	float: right;
+	margin-right: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+#logo-col{
+	color: orangered;
+}
+
+@media (max-width: 375px) {
+	.head{
+		margin-top: 10px;
+	}
+
+	.calc{
+		font-size: 30px;
+	}
+
+	.rights{
+		font-size: 20px;
+	}
+
+	.rights span{
+		margin-right: 14px;
+	}
+
+	#theme{
+		font-size: 12px;
+	}
+
+	.tw-toggle span {
+	  height: 13px;
+	  width: 13px;
+	  line-height: 13px;
+	  top: 6px;
+	 }
+
+	.tw-toggle input[value="false"]:checked ~ span{
+	  left: 4px;
+	}
+
+	.display{
+		width: 260px;
+	}
+
+	.button{
+		width: 280px;
+	}
+
+	.btn-back{
+		padding: 5px 20px;
+		margin-bottom: -5px;
+	}
+
+	.left{
+		margin-left: 15px;
+	}
+
+	.right{
+		margin-right: 15px;
+	}
+
+	#del{
+		padding: 10px 10px;
+	}
+
+	#minus{
+		padding-left: 30px;
+	}
+
+	#divide, #dot{
+		padding-right: 25px;
+	}
+
+	.final{
+		margin: 0 17px;
+	}
+
+	#equalTo{
+		padding: 10px 54px;
+	}
+
+	#reset{
+		padding: 10px 26px;
+	}
+
+	#logo{
+		margin-right: 10px;
+		margin-top: 10px;
+		font-size: 15px;
+	}
+}
