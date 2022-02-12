@@ -259,7 +259,7 @@ body{
 	color: orangered;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
 	.head{
 		margin-top: 10px;
 	}
