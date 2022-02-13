@@ -260,6 +260,12 @@ body{
 	.display{
 		width: 260px;
 	}
+	
+	#btn2:checked:after, #btn1:checked:after, #btn3:checked:after {
+	    width: 15px;
+	    height: 15px;
+	    color: var(--equal-background);
+	}
 
 	.button{
 		width: 280px;
