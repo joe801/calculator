@@ -8,6 +8,7 @@ function theme1() {
   document.body.classList.remove("theme3");
   document.getElementById("btn2").style.opacity = "0.1";
   document.getElementById("btn3").style.opacity = "0.1";
+  document.getElementById("btn1").style.opacity = "0.9";
 }
 
 function theme2() {
@@ -16,6 +17,7 @@ function theme2() {
   document.body.classList.remove("theme3");
   document.getElementById("btn1").style.opacity = "0.1";
   document.getElementById("btn3").style.opacity = "0.1";
+  document.getElementById("btn2").style.opacity = "0.9";
 }
 
 function theme3() {
@@ -24,6 +26,7 @@ function theme3() {
   document.body.classList.remove("body");
   document.getElementById("btn2").style.opacity = "0.1";
   document.getElementById("btn1").style.opacity = "0.1";
+  document.getElementById("btn3").style.opacity = "0.9";
    document.getElementById("equalTo").style.color = "black";
 }
 
