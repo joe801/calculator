@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Calculator](https://joe801.github.io/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Joecrypt](https://www.joecrypt.tk/project3/index.html)
 
 ## My process
 
@@ -56,9 +56,16 @@ I learnt some functions and codes I've never used or had to used before like;
 <div onclick="document.calc.txt.value +='.'">.</div>
 ```
 ```css
-.tw-toggle input[value="true"]:checked ~ span{
-  background: var(--equal-background);
-  left: 39px;
+#btn2:checked:after, #btn1:checked:after, #btn3:checked:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 15px; 
+    position: relative;
+    background-color: var(--equal-background);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    opacity: 0.9;
 }
 ```
 ```js
@@ -70,13 +77,9 @@ document.body.classList.add("theme2");
 
 I want to work on making my codes shorter.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
-I learnt the new stuff I know working on this project from Gooogle. AS the saying goes; "as a developer, Google is your best friend".
+I learnt the new stuff I know working on this project from Gooogle. AS the saying goes; "as a developer, Google is your best friend" 😉.
 
 ## Author
 
