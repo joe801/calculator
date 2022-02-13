@@ -257,17 +257,6 @@ body{
 		font-size: 12px;
 	}
 
-	.tw-toggle span {
-	  height: 13px;
-	  width: 13px;
-	  line-height: 13px;
-	  top: 6px;
-	 }
-
-	.tw-toggle input[value="false"]:checked ~ span{
-	  left: 4px;
-	}
-
 	.display{
 		width: 260px;
 	}
