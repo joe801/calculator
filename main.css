@@ -118,8 +118,8 @@ body{
 }
 
 #btn2:checked:after, #btn1:checked:after, #btn3:checked:after {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 15px; 
     position: relative;
     background-color: var(--equal-background);
