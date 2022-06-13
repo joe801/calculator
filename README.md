@@ -30,13 +30,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/theme1)
+![](/images/theme1)
 
-![](./images/theme3)
+![](/images/theme3)
 
 ### Links
 
-- Solution URL: [Calculator](https://joe801.github.io/)
+- Solution URL: [Calculator](https://github.com/joe801/calculator)
 - Live Site URL: [Joecrypt](https://www.joecrypt.tk/project3/index.html)
 
 ## My process
