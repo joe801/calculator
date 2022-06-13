@@ -30,9 +30,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](/images/theme1)
+![](/images/theme1.png)
 
-![](/images/theme3)
+![](/images/theme3.png)
 
 ### Links
 
